@@ -1,0 +1,2 @@
+30-10-2018 19:50:10 ----- {"user": "pavelsvejda", "pid": 2253, "cpu": "8.4", "mem": "2,1", "started": "po05od", "time": "1:10.68", "command": "/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal\n"}
+30-10-2018 19:50:10 ----- {"user": "root", "pid": 13132, "cpu": "1.2", "mem": "0,2", "started": "7:38od", "time": "0:34.17", "command": "top\n"}
