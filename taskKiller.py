@@ -85,9 +85,8 @@ class TaskKiller:
         return ret
 
     def killTask(self,task):
-        #os.popen("sudo kill "+str(task.pid))
+        os.popen("sudo kill "+str(task.pid))
         self.LOGER.write(task.getTaskS())
-        print(task.getTask())
 
     def getPids(self):
         ret = []
@@ -136,14 +135,8 @@ class TaskKiller:
 
 
 
-def runMain():
-    print('____________________'*20)
-    tasks = TaskKiller(cpulimit=10,user="pavelsvejda")
+
+if __name__ == "__main__":
+    tasks = TaskKiller(cpulimit=90)
     tasks.loadTaskList()
     tasks.killCpuUsage()
-    #print(tasks.findCpuUsers())
-
-
-
-
-runMain()
